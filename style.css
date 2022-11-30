@@ -113,7 +113,7 @@ nav ul li a:hover {
 }
 .home .container-image {
   width: 45%;
-  height: 80%;
+  height: 70vh;
   position: relative;
   align-self: flex-end;
 }
@@ -248,7 +248,7 @@ footer{
     height: 50px;
   }
   .home .container-image{
-    display: none;
+   /*  display: none; */
   }
   nav{
     position: fixed;
@@ -264,19 +264,19 @@ footer{
     z-index: 100;
    
   }
-  .content{
+ /*  .content{
     display: block;
     position: relative;
     top: 150px;
     
   }
+   */
   
-  
-  .container-texts{
+  /* .container-texts{
     bottom: 0;
     width: 100%;
    
-  }
+  } */
   .sociel{
     margin-top: 70px;
   }
