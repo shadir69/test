@@ -326,6 +326,7 @@ footer{
  
   .home .youyou{
     display: block;
+    align-self: flex-start;
   }
  }
  
