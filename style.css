@@ -370,7 +370,8 @@ footer{
  .youyou{
   display: none;
   width: 200px;
-  height: 200px;
+ 
+  
   
   border-radius: 50%;
   
@@ -379,6 +380,7 @@ footer{
  .youyou img {
   width: 100%;
 /*   border: 1px solid var(--primaryColor);
- */  border-radius: 50%;
+ */  border-radius: 100%;
+ box-shadow: 0 0  8px 1px var(--primaryColor);
 
  }
