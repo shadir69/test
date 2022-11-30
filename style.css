@@ -21,8 +21,9 @@ html {
 
 
 .home {
+ 
   width: 100%;
-  height: 100vh;
+ 
   background-color: var(--bgColor-1);
 
 }
@@ -116,6 +117,7 @@ nav ul li a:hover {
   height: 70vh;
   position: relative;
   align-self: flex-end;
+  bottom: 0;
 }
 .home .container-image img {
   position: absolute;
@@ -131,7 +133,7 @@ nav ul li a:hover {
   right: 100px;
 }
 .container-image:hover .shape {
-  bottom: 100px;
+  bottom: 0;
   right: 100px;
 }
 .container-image:hover .pic {
@@ -248,7 +250,10 @@ footer{
     height: 50px;
   }
   .home .container-image{
-   /*  display: none; */
+    display: none;
+  }
+  .home  {
+  
   }
   nav{
     position: fixed;
@@ -264,19 +269,22 @@ footer{
     z-index: 100;
    
   }
- /*  .content{
-    display: block;
-    position: relative;
-    top: 150px;
+  .content{
+    display: flex;
+    position: static;
+    margin-top: 80px;
+    padding-top: 5rem;
     
   }
-   */
+.content h1 {
+  width: 75%;
+}
   
-  /* .container-texts{
+   .container-texts{
     bottom: 0;
     width: 100%;
    
-  } */
+  }
   .sociel{
     margin-top: 70px;
   }
@@ -353,4 +361,19 @@ footer{
  }
  #menu.is-active span{
   background-color: var(--primaryColor);
+ }
+ /**********************youyou*/
+ .youyou{
+  width: 200px;
+  height: 200px;
+  
+  border-radius: 50%;
+  
+
+ }
+ .youyou img {
+  width: 100%;
+/*   border: 1px solid var(--primaryColor);
+ */  border-radius: 50%;
+
  }
