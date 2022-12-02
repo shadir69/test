@@ -5,6 +5,8 @@
   --bgColor-1: #171a1c;
   --bgColor-2: #22282a;
   --padding: 8%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 * {
