@@ -6,7 +6,7 @@
   --bgColor-2: #22282a;
   --padding: 8%;
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 80px;
 }
 
 * {
@@ -23,9 +23,11 @@ html {
 
 
 .home {
- 
+ display: flex;
+ flex-direction: column;
+
   width: 100%;
- 
+ height: 100vh;
   background-color: var(--bgColor-1);
 
 }
@@ -63,6 +65,20 @@ nav ul li a {
 nav ul li a:hover {
   color: var(--primaryColor);
 }
+ @media screen and (max-width:970px) {
+ nav .btn {
+    display: none;
+  }
+  :root{
+    --padding: 2rem;
+  }
+  html{
+    font-size: 13px;
+  }
+   
+}
+
+ 
 
 .btn {
   background-color: var(--primaryColor);
@@ -82,8 +98,9 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   padding: 0 var(--padding);
-  
+ 
   justify-content: space-between;
+  flex: 1;
 }
 .container-texts {
   position: relative;
@@ -114,13 +131,22 @@ nav ul li a:hover {
 .sociel img:hover {
   transform: scale(1.2);
 }
-.home .container-image {
+.home .container-image{
   width: 45%;
-  height: 70vh;
+  height: 500px;
   position: relative;
-  align-self: flex-end;
+  align-items: flex-end;
   bottom: 0;
 }
+.home .container-image img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* 
 .home .container-image img {
   position: absolute;
   top: 50;
@@ -130,17 +156,14 @@ nav ul li a:hover {
   transform: translateX(-50%);
   transition: bottom 1s, left 1s;
 }
-.container-image .shape {
-  bottom: 80px;
-  right: 100px;
-}
+
 .container-image:hover .shape {
   bottom: 0;
   right: 100px;
 }
 .container-image:hover .pic {
   left: 45%;
-}
+} */
 .about {
   
   padding-top: 10rem;
@@ -240,7 +263,7 @@ footer{
   text-align: center;
 }
 /**********************************************/
- @media screen and (max-width:575px ){
+ @media screen and (max-width:610px ){
   :root{
     --padding: 1.5rem;
   }
@@ -255,7 +278,7 @@ footer{
     display: none;
   }
   .home  {
-  
+  height: auto;
   }
   nav{
     position: fixed;
@@ -372,17 +395,23 @@ footer{
  .youyou{
   display: none;
   width: 200px;
- 
-  
-  
-  border-radius: 50%;
-  
-
+position: relative;
  }
  .youyou img {
   width: 100%;
-/*   border: 1px solid var(--primaryColor);
- */  border-radius: 100%;
- box-shadow: 0 0  8px 1px var(--primaryColor);
+border-radius: 50%;
 
+ /* box-shadow: 0px 5px  5px  var(--primaryColor); */
+
+ }
+ .main-image{
+  position: absolute;
+  transform: scale(0.7);
+ top: -6px;
+ left: 3px;
+ z-index: 5;
+ }
+ .back-image{
+  z-index: -1;
+  transform: scale(1.1);
  }
